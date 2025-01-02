@@ -133,8 +133,16 @@ nav .left a{
     flex: 5;
 }
 
-.about-me-section .text h2 {
-    font-size: 45px;
+.about-me-section h1 {
+    font-size: 60px;
+}
+
+.about-me-section #name {
+    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--link-color);
+    
 }
 
 
@@ -174,7 +182,7 @@ nav .left a{
   }
 
 @media (max-width: 850px) {
-    .about-me-section .text h2 {
+    .about-me-section .text h1 {
         font-size: 35px;
     }
 }
@@ -216,7 +224,7 @@ nav .left a{
         padding: 0 20px;
     }
 
-    .about-me-section .text h2 {
+    .about-me-section .text h1 {
         font-size: 30px;
     }
 
@@ -241,7 +249,7 @@ nav .left a{
     nav .left a{
         font-size: 20px;
     }
-    .about-me-section .text h2 {
+    .about-me-section .text h1 {
         font-size: 20px;
     } 
 
