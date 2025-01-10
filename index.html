@@ -25,35 +25,26 @@
         
             <ul class="nav_link--list">
                 <li class="nav_link">
-                    <a href="https://github.com/kenthua888" target="_blank" rel="noopener noreferrer" class="
+                    <a href="#about" class="
                     nav_link--anchor
                     link_hover-effect
                     link_hover-effect--black">
-                    <!--</1><i class="fa-brands fa-github">
-                        <span>About</span>
-                    </i>-->
                     About
                     </a>
                 </li>
                 <li class="nav_link">
-                    <a href="https://www.linkedin.com/in/kent-hua/" target="_blank" rel="noopener noreferrer"  class="
+                    <a href="#skills" class="
                     nav_link--anchor
                     link_hover-effect
                     link_hover-effect--black">
-                    <!--<i class="fa-brands fa-linkedin">
-                        <span>Skills</span>
-                    </i>-->
                     Skills
                     </a>
                 </li>
                 <li class="nav_link">
-                    <a href="mailto:officialkenthua@gmail.com" class="
+                    <a href="#projects" class="
                     nav_link--anchor
                     link_hover-effect
                     link_hover-effect--black">
-                    <!--<i class="fa-regular fa-envelope"></i>
-                    <span>Projects</span>
-                    </i>-->
                     Projects
                     </a>
                 </li>
@@ -62,25 +53,27 @@
 
     </section>
     <!-- SECTION 1: Hero -->
-     <section class="about-me-section">
+     <section id="about" class="about-me-section">
         <div class="text">
             <h1>Hi! I am <span id="name">Kent.</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam assumenda est perspiciatis labore quasi, iure dignissimos, libero, omnis sint necessitatibus ad. Hic expedita eligendi tenetur quisquam id quaerat alias cumque, autem voluptatem in iure ut laudantium tempora cupiditate voluptate est nemo impedit, quidem iusto, provident aperiam. Iste, repellat aperiam!</p>
         
             <div class="links">
-                <a href="#skills">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Skills</span>
+                <a href="pages/resume.html" target="_self">
+                    <span>My Resume</span>
                 </a>
 
-                <a href="#projects">
-                    <i class="fa-solid fa-gears"></i>
-                    <span>Projects</span>
+                <a href="https://www.linkedin.com/in/kent-hua/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
                 </a>
-
-                <a href="#experience">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <span>Experience</span>
+                <a href="https://github.com/kenthua888" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:officialkenthua@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contact</span>
                 </a>
             </div>
         </div>
@@ -91,31 +84,62 @@
     
     <!-- SECTION 2: Skills and Languages -->
     <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-text">
-            <pre>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Voluptates, perspiciatis iure distinctio quidem aperiam 
-                necessitatibus omnis possimus excepturi amet quos rerum? 
-                Perferendis repellat natus saepe quaerat quibusdam neque 
-                recusandae optio?
-
-
-
-
-
-
-
-
-
-
-
-                
-
-            </pre>
+        <div class="container-odd">
+            <div class="row">
+                <h2 class="section_title">
+                    My technical <span id="blue-text">languages</span>
+                </h2>
+                <div class="languages_list">
+                    <div class="language">
+                        <figure class="language_img-wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/python-3521655-2945099.png" alt="Python logo" class="language_logo">
+                        </figure>
+                        <span class="language_name">Python</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language_img-wrapper">
+                            <img src="assets/images/java-logo.webp" alt="Java logo" class="language_logo">
+                        </figure>
+                        <span class="language_name">Java</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language_img-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML logo" class="language_logo">
+                        </figure>
+                        <span class="language_name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language_img-wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS logo" class="language_logo">
+                        </figure>
+                        <span class="language_name">CSS</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language_img-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" alt="Javascript logo" class="language_logo-js">
+                        </figure>
+                        <span class="language_name">JavaScript</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language_img-wrapper">
+                            <img src="assets/images/sap.png" alt="SAP logo" class="language_logo">
+                        </figure>
+                        <span class="language_name">SAP ABAP</span>
+                    </div>
+                </div>
+            </div>
             
         </div>
-        
+        <div class="container-even">
+            <h2 class="section_title">
+                The <span id="blue-text">frontend</span>
+            </h2>
+        </div>
+        <div class="container-odd">
+            <h2 class="section_title">
+                The <span id="blue-text">backend</span>
+            </h2>
+        </div>
     </section>
     <!-- SECTION 3: Projects -->
     <section id="projects">
