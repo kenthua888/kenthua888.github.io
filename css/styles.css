@@ -254,6 +254,24 @@ nav .left a{
     height: 18px; 
     line-height: 18px; 
 }
+.language_name_sc {
+    opacity: 0;
+    transition: font-size 0.5s ease ,opacity 0.3s ease-in-out;
+    margin-top: 10px;
+    font-size: 0px;
+
+    height: 18px; 
+    line-height: 18px;
+
+}
+
+.language:hover .language_name_sc{
+    opacity: 1; 
+    font-size: 21px;
+
+    text-align: center;
+    
+}
 
 .language:hover .language_logo {
     transform: scale(0.8); 
