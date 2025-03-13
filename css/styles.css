@@ -335,6 +335,19 @@ nav .left a{
     border-radius: 20px;
     overflow: hidden;
     position: relative;
+    list-style: none;
+  }
+
+  .video-link {
+    display: block;
+    width: fit-content;
+    text-decoration: none; /* Remove underline from the link */
+  }
+
+  .video-link video {
+    width: 100%;
+    height: auto;
+    pointer-events: none; /* Prevent video controls from blocking the link */
   }
 
 .video-container:before{
@@ -361,34 +374,40 @@ nav .left a{
 .video-container:hover .project_description {
     opacity: 1;
     transform: translate(-50%, -50%);
+    pointer-events: auto; /* Allow clicks */
 }
 
 
 .project_description {
     position: absolute;
-    top: 50%;
-    left: 45%;
+    top: 45%;
+    left: 50%;
     transform: translate(-50%, 100%);
     text-align:left;
-    max-width: 500px;
+    width: 100%; /* Match the width of the video */
+    max-width: 100%;
+    padding: 20px; /* Add padding to avoid text touching the edges */
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
     z-index: 3;
     opacity: 0;
     transition: transform 450ms ease, opacity 300ms ease;
+
+    pointer-events: none; /* Disable clicks when hidden */
 }
 
 .project_description-title {
-    font-size: 25px;
+    font-size: 30px;
     color: #fff;
     font-weight: bold;
 }
 
 .project_description-sub-title {
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
 }
 
 .project_description-para {
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     margin: 16px 0;
 }
